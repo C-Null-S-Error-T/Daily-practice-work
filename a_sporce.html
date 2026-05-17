@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sporce</title>
+    <style>
+        .bat{
+            border: 2px solid skyblue;
+        }
+        .boll{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            left: 200px;
+            bottom: 50px;
+            transition: transform 1s ease-in-out .7s;
+ 
+        }
+        .batmov{
+            transition: transform 2s ease-in-out;
+        }
+        .bat:hover .boll{
+            transform:translate(500px);
+        }
+        .bat:hover .batmov {
+            transform: rotate(-60deg);
+            transform-origin:top right;
+        }
+    </style>
+</head>
+<body>
+    <div class="bat">
+        <img class="batmov" src="Screenshot 2026-05-17 143138.png" alt="bat finder">
+        <div class="boll"></div>
+    </div>
+    
+</body>
+</html>
