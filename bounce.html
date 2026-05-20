@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce</title>
+    <!-- <style>
+        .boxx{
+            width: 400px;
+            height: 400px;
+            border: 2px solid skyblue;
+            position: relative;
+            background-color: navajowhite;
+        }
+        .boll{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: bounce 2s ease-in-out infinite;
+        }
+        @keyframes bounce {
+            0% {
+                left: 0;
+                top: 0;
+                transform: translate(0, 0);
+            }
+            25% {
+                left: 350px;
+                top: 0;
+                transform: translate(0, 0);
+            }
+            50% {
+                left: 350px;
+                top: 350px;
+                transform: translate(0, 0);
+            }
+            75% {
+                left: 0;
+                top: 350px;
+                transform: translate(0, 0);
+            }
+            100% {
+                left: 0;
+                top: 0;
+                transform: translate(0, 0);
+            }
+        }
+
+    </style> -->
+    <style>
+        .boxx {
+            border: 3px solid rgb(4, 234, 27);
+            background-color: navajowhite;
+            width: 300px;
+            height: 300px;
+        }
+
+        .boll {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+            /* animation: bounce 2s ease-in-out 1s infinite alternate; */
+            animation: bounce 3s ease-in-out 1s infinite alternate ;
+        }
+        /* @keyframes bounce{
+            from{
+                left: 0;
+            }
+            to{
+                left: 270px;
+                background-color: chartreuse;
+            }
+        } */
+        @keyframes bounce{
+            0%{
+                top: 0;
+                left: 0;
+            }
+            25%{
+                top: 270px;
+                left: 270px;
+            }
+            50%{
+                top: 0px;
+                left: 270px;
+            }
+            100%{
+                top: 270px;
+                left: 270px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="boxx">
+        <div class="boll"></div>
+    </div>
+
+</body>
+</body>
+
+</html>
